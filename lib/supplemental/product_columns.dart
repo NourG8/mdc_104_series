@@ -49,7 +49,7 @@ class TwoProductCardColumn extends StatelessWidget {
             child: top != null
                 ? ProductCard(
               imageAspectRatio: imageAspectRatio,
-              product: top,
+              product: top!,
             )
                 : SizedBox(
               height: heightOfCards,
