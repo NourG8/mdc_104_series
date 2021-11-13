@@ -251,6 +251,34 @@ class _BackdropState extends State<Backdrop>
       actions: <Widget>[
         // TODO: Add shortcut to login screen from trailing icons (104)
         IconButton(
+          icon: const Icon(
+            Icons.search,
+            semanticLabel: 'login', // New code
+          ),
+          onPressed: () {
+            // TODO: Add open login (104)
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (BuildContext context) => LoginPage()),
+            );
+          },
+        ),
+        IconButton(
+          icon: const Icon(
+            Icons.tune,
+            semanticLabel: 'login', // New code
+          ),
+          onPressed: () {
+            // TODO: Add open login (104)
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (BuildContext context) => LoginPage()),
+            );
+          },
+        ),
+        IconButton(
           icon: Icon(
             Icons.search,
             semanticLabel: 'search',
