@@ -242,7 +242,12 @@ class _BackdropState extends State<Backdrop>
       ),
       // TODO: Remove leading property (104)
       // TODO: Create title with _BackdropTitle parameter (104)
-      title: Text('SHRINE'),
+      title: _BackdropTitle(
+        listenable: _controller.view,
+        onPress: _toggleBackdropLayerVisibility,
+        frontTitle: widget.frontTitle,
+        backTitle: widget.backTitle,
+      ),
       actions: <Widget>[
         // TODO: Add shortcut to login screen from trailing icons (104)
         IconButton(
